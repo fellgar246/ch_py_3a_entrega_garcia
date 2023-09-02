@@ -27,7 +27,8 @@ class entry(models.Model):
 
     def __str__(self):
         return f'{self.title} - {self.text}'
-    
+
+# Este modelo no se utiliza 
 class posts(models.Model):
     title = models.CharField(max_length=30)
     text =  models.CharField(max_length=300)
