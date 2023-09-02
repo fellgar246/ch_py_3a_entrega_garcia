@@ -1,0 +1,8 @@
+{% extends 'padre.html' %}
+
+{% block contenido %}
+    <form action="{% url 'EntryCreate' %}" method="post">{% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Crear</button>
+    </form>
+{% endblock contenido %}

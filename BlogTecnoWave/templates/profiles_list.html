@@ -1,0 +1,12 @@
+{% extends 'padre.html' %}
+
+{% block contenido %}
+    <ul>   
+        {% for profile in profiles %}
+            <li>{{profile }}</li>
+        {% endfor %}
+            
+    </ul>
+    <a href="{% url 'BusquedaProfile' %}">Buscar Perfil</a>
+    <a href="{% url 'ProfileCreate' %}">Crear Perfil</a>
+{% endblock contenido %}
